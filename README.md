@@ -19,7 +19,7 @@
 > `Disclaimer:
 This remedial final project serves as a final crucial component of the educational and assessment sequence in Job Connector Data Science and Machine Learning Program at Purwadhika Digital Technology School. Please kindly download the notebook to your local environment to read the Jupyter Notebook.`
 
-**Author:** [Arief Luqman Hakiem](https://www.linkedin.com/in/ariefluqman/) and [Samuel Semaya](https://www.linkedin.com/in/samuelsemaya/) <br>
+**Author:** [Arief Luqman Hakiem](https://www.linkedin.com/in/ariefluqman/) dan [Samuel Semaya](https://www.linkedin.com/in/samuelsemaya/) <br>
 **Batch:** JCDS 2404 <br>
 **Date Submitted and Last Updated:** `2024-11-04` <br>
 **Data Source:** [Kaggle E-commerce Customer Churn Dataset](https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction) <br>
