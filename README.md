@@ -5,7 +5,7 @@
 
 <h1 align="center">
   <span style="color: #627254; font-size: 44px; font-weight: bold;">
-    Flipkart: Analisis dan Prediksi untuk Efisiensi Biaya Akuisisi dan Retensi
+    Flipkart E-commerce Customer Churn: Analisis dan Prediksi untuk Efisiensi Biaya Akuisisi dan Retensi
   </span>
 </h1>
 
@@ -41,14 +41,11 @@ This remedial final project serves as a final crucial component of the education
 
 <div style='text-align: justify'>
 
-<strong>text
-<br><br>
-text
-<br><br>
-text
+<strong>Customer churn atau kehilangan pelanggan menjadi tantangan signifikan bagi industri e-commerce, termasuk Flipkart.</strong> Dalam industri ini, di mana persaingan sangat ketat dan pilihan konsumen semakin beragam, mempertahankan pelanggan menjadi lebih sulit. <strong>Churn berdampak langsung pada pendapatan dan profitabilitas perusahaan</strong>, karena biaya untuk mendapatkan pelanggan baru sering kali lebih tinggi daripada mempertahankan yang sudah ada. Dengan semakin banyaknya pilihan platform dan peningkatan ekspektasi pelanggan terhadap layanan, e-commerce seperti Flipkart harus <strong>mengembangkan strategi yang efektif untuk memahami penyebab churn serta mencari solusi inovatif untuk meningkatkan retensi dan efisiensi biaya perusahaan.</strong>
+
+<strong>Dari perspektif bisnis</strong>, efisiensi biaya akuisisi dan retensi pelanggan sangat penting dalam menjaga profitabilitas dan keberlanjutan perusahaan e-commerce seperti Flipkart. <strong>Nilai Customer Spend per Month (CSPM) yang mencapai ₹17.550</strong> menunjukkan potensi pendapatan rata-rata yang dapat dihasilkan dari setiap pelanggan aktif dalam satu bulan. Di sisi lain, <strong>Customer Acquisition Cost (CAC) sebesar ₹6.500</strong> untuk menyoroti biaya yang diperlukan untuk menarik pelanggan baru. Biaya Retensi Pelanggan atau <strong>Customer Retention Cost (CRC), yang sekitar ₹4.000</strong>, juga menjadi metrik penting, karena menggambarkan biaya yang diperlukan untuk mempertahankan pelanggan. Dengan membandingkan nilai-nilai ini, Flipkart dapat <strong>menyusun strategi efisiensi biaya yang optimal, di mana biaya retensi yang relatif tinggi dibandingkan biaya akuisisi menunjukkan pentingnya menjaga pelanggan agar menghasilkan keuntungan jangka panjang.</strong> Menggunakan analisis ini, Flipkart dapat membuat keputusan yang lebih tepat dalam alokasi anggaran untuk akuisisi dan retensi, sekaligus memaksimalkan nilai seumur hidup pelanggan bagi perusahaan.
 
 </div>
-
 
 
 
@@ -60,14 +57,11 @@ text
 
 <div style='text-align: justify'>
 
-text
-<br><br>
-text
-<br><br>
-text
+Sebagai salah satu platform leading e-commerce di India, Flipkart menghadapi tantangan churn pelanggan yang signifikan, di mana <strong>sekitar 16.8% pelanggan—948 dari total 5,630—berhenti menggunakan layanan.</strong> Tingginya churn ini <strong>mempengaruhi nilai Customer Spend per Month (CSPM)</strong>, karena berkurangnya jumlah pelanggan aktif mengurangi pendapatan potensial yang dapat dihasilkan setiap bulannya. Dengan penurunan CSPM, Flipkart harus menghadapi konsekuensi finansial yang semakin besar, terutama dalam menjaga stabilitas pendapatan yang dibutuhkan untuk mendukung pertumbuhan jangka panjang.
+
+Selain itu, <strong>churn yang tinggi berdampak</strong> langsung pada <strong>Customer Acquisition Cost (CAC) dan Customer Retention Cost (CRC).</strong> Untuk menggantikan pelanggan yang churn, Flipkart perlu meningkatkan biaya akuisisi, yang sering kali jauh lebih tinggi dibandingkan mempertahankan pelanggan yang sudah ada. Di sisi lain, upaya menekan churn juga memerlukan investasi pada biaya retensi yang menguras anggaran. Ketidakstabilan ini menuntut Flipkart untuk mencari solusi yang dapat <strong>menyeimbangkan antara nilai CAC, CRC, dan CSPM, sehingga biaya operasional tetap efisien di tengah tingginya tingkat churn.</strong>
 
 </div>
-
 
 
 
@@ -79,9 +73,15 @@ text
 
 <div style='text-align: justify'>
 
-text
+Berdasarkan pernyataan permasalahan tersebut dan peran dari pemangku kebijakan, berikut merupakan tujuan yang ingin dicapai:
+1. <strong>Mengidentifikasi Faktor Churn Pelanggan:</strong> Memahami secara mendalam faktor-faktor yang mendorong pelanggan untuk berhenti menggunakan layanan merupakan langkah penting bagi perusahaan. Dengan mengetahui penyebab utama churn, perusahaan dapat melakukan evaluasi menyeluruh terhadap elemen-elemen yang paling berpengaruh, sehingga upaya retensi dapat lebih efektif dan tepat sasaran.
+2. <strong>Mengidentifikasi Pola dan Meningkatkan Pengalaman Pengguna:</strong> Pemahaman mendalam tentang pola perilaku dan alasan di balik churn memungkinkan perusahaan untuk menyempurnakan aspek-aspek tertentu dari pengalaman pengguna. Langkah ini penting untuk memastikan kepuasan pelanggan tetap terjaga dan meminimalisir peluang hilangnya pelanggan karena aspek-aspek yang dapat diperbaiki.
+3. <strong>Memproyeksikan Pelanggan Berpotensi Churn:</strong> Melalui prediksi yang akurat terhadap pelanggan yang berpotensi churn, perusahaan dapat mengambil tindakan preventif yang tepat guna mempertahankan pelanggan. Pendekatan ini tidak hanya mengurangi tingkat churn, tetapi juga mengoptimalkan anggaran dengan meminimalkan kerugian yang timbul dari kehilangan pelanggan serta menekan biaya yang dikeluarkan untuk akuisisi pelanggan baru.
 
 </div>
+
+
+
 <div style="text-align: left;">
   <h2 style="background-color: #2C3E3D; color: white; padding: 10px 20px; margin-bottom: 20px; border-radius: 8px; font-weight: bold; display: inline-block; font-size: 30px">Evaluasi Metrik</h2>
 </div>
@@ -90,11 +90,6 @@ text
 
 <div style='text-align: justify'>
 
-text
-<br><br>
-<div style='text-align: justify'>
-text
-<br><br>
 text
 
 </div>
@@ -106,6 +101,8 @@ text
 </div>
 
 ---
+
+<div style='text-align: justify'>
 
 | Variabel                     | Deskripsi                                                                          |
 |----------------------------  |------------------------------------------------------------------------------------|
@@ -130,6 +127,8 @@ text
 | `DaySinceLastOrder`          | Jumlah hari sejak pesanan terakhir oleh pelanggan                                  |
 | `CashbackAmount`             | Rata-rata cashback dalam sebulan terakhir (rupee)                                  |
 
+</div>
+
 
 
 <div style="text-align: left;">
@@ -138,7 +137,11 @@ text
 
 ---
 
+<div style='text-align: justify'>
+
 text
+
+</div>
 
 
 Data yang dibersihkan terlampir dalam repositori ini dengan nama
