@@ -22,7 +22,7 @@ This remedial final project serves as a final crucial component of the education
 **Author:** [Arief Luqman Hakiem](https://www.linkedin.com/in/ariefluqman/) and [Samuel Semaya](https://www.linkedin.com/in/samuelsemaya/) <br>
 **Batch:** JCDS 2404 <br>
 **Date Submitted and Last Updated:** `2024-11-04` <br>
-**Data Source:** [Kaggle E-commerce Customer Churn Dataset]([https://www.kaggle.com/jessemostipak/hotel-booking-demand/data](https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction)) <br>
+**Data Source:** [Kaggle E-commerce Customer Churn Dataset](https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction) <br>
 
 <div style="text-align: left;">
   <h2 style="background-color: #2C3E3D; color: white; padding: 10px 20px; margin-bottom: 20px; border-radius: 8px; font-weight: bold; display: inline-block;">Sumber Daya Pendukung</h2>
