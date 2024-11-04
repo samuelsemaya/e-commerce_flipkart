@@ -90,7 +90,13 @@ Berdasarkan pernyataan permasalahan tersebut dan peran dari pemangku kebijakan, 
 
 <div style='text-align: justify'>
 
-text
+Dalam membangun model pembelajaran mesin yang bertujuan memprediksi kemungkinan pelanggan akan churn, kita mempertimbangkan dua jenis kesalahan prediksi, yaitu: **Kesalahan Tipe I (False Positive)** dan **Kesalahan Tipe II (False Negative)**. Kesalahan Tipe I terjadi ketika model salah memprediksi bahwa pelanggan akan churn padahal tidak, yang menyebabkan biaya retensi yang tidak diperlukan, seperti diskon atau insentif yang sebenarnya tidak diperlukan. Sebagai gambaran, biaya retensi per pelanggan adalah sekitar ₹4000, jauh lebih murah daripada biaya akuisisi sebesar ₹6.500 per pelanggan. Jika terjadi 1.000 kesalahan prediksi positif, perusahaan bisa mengeluarkan biaya tambahan sekitar ₹4.000.000 rupee per bulan untuk retensi yang tidak perlu.
+
+Di sisi lain, **Kesalahan Tipe II** terjadi ketika model gagal mendeteksi pelanggan yang sebenarnya berpotensi churn, yang pada akhirnya mengakibatkan kebutuhan untuk mengakuisisi pelanggan baru dengan biaya sebesar ₹6.500 per pelanggan. Untuk setiap 1.000 kesalahan negatif, perusahaan bisa mengeluarkan biaya sekitar ₹6.500.000. Biaya yang lebih tinggi untuk kesalahan Tipe II ini menunjukkan pentingnya meminimalkan pelanggan yang tidak terdeteksi sebagai churn.
+
+Mengingat dampak finansial dari Kesalahan Tipe II yang jauh lebih signifikan dibandingkan dengan Kesalahan Tipe I, kita memilih menggunakan **F2-score** sebagai metrik evaluasi. Secara teknis, F2-score menempatkan bobot lebih besar pada **recall**, yang merupakan kemampuan model dalam mendeteksi pelanggan yang benar-benar berisiko churn. Dengan menggunakan F2-score, kita dapat memaksimalkan cakupan pelanggan berisiko yang teridentifikasi, tanpa mengabaikan presisi prediksi. 
+
+Dari sudut pandang bisnis, F2-score membantu perusahaan memfokuskan upaya retensi pada pelanggan yang benar-benar berisiko, sehingga meminimalkan kerugian finansial akibat churn yang tidak terdeteksi dan mengurangi kebutuhan untuk biaya akuisisi yang lebih mahal.
 
 </div>
 
@@ -139,13 +145,10 @@ text
 
 <div style='text-align: justify'>
 
-text
-
-</div>
-
-
 Data yang dibersihkan terlampir dalam repositori ini dengan nama
 `ecommerce_churn_cleaned.csv`.
+
+</div>
 
 
 
@@ -156,11 +159,14 @@ Data yang dibersihkan terlampir dalam repositori ini dengan nama
 ---
 
 <div style='text-align: justify'>
-For this guest prediction cancellation project, we will separate the dataset into features (independent variables) and target (dependent variable). Features include columns excluding 'is_canceled', such as 'agent', 'company', and others. <strong>Our target is the 'is_canceled' column</strong>, which indicates whether a guest canceled or not. This separation is crucial for training the model to predict canceled based on guest characteristics.
 
-To be precise, there are 19 columns used as features, listed below:
-* Categorical features: `hotel`, `agent`, `company`, `customer_type`, `deposit_type`, `distribution_channel`, `market_segment`, `meal`, `is_local`, `was_in_waiting_list`, `is_repeated_guest`;
-* Numerical features: `adr_third_quartile_deviation`, `adults`, `booking_changes`, `lead_time`, `previous_cancellation_ratio`, `total_of_special_requests`, `duration_of_stay`, `arrival_date_week_number`.
+Untuk proyek ini, dataset akan dibagi menjadi **fitur (variabel independen)** dan **target (variabel dependen)**. Fitur mencakup semua kolom kecuali `Churn`, sedangkan targetnya adalah kolom `Churn`, yang menunjukkan apakah pengguna berhenti menggunakan layanan atau tidak. Pemisahan ini sangat penting untuk melatih model agar mampu memprediksi pembatalan berdasarkan karakteristik pengguna.
+
+Secara khusus, ada 18 kolom yang digunakan sebagai fitur, yang dibagi menjadi tiga kategori:
+* **Fitur Kategorikal**: `PreferredLoginDevice`, `PreferredPaymentMode`, `PreferredOrderCat`, `MaritalStatus`, `Gender`
+* **Fitur Numerik**: `Tenure`, `WarehouseToHome`, `HourSpendOnApp`, `NumberOfDeviceRegistered`, `NumberOfAddress`, `Complain`, `OrderAmountHikeFromlastYear`, `CouponUsed`, `OrderCount`, `DaySinceLastOrder`, `CashbackAmount`
+* **Fitur Ordinal**: `CityTier`, `SatisfactionScore` – fitur ini memiliki urutan tertentu, dengan `CityTier` menunjukkan kategori kota dan `SatisfactionScore` menunjukkan tingkat kepuasan pengguna.
+
 </div>
 
 
@@ -177,12 +183,19 @@ Based on the cross-validating and model evaluation, the model chosen for this ca
 
 ---
 
-This model was trained using Xtreme Gradient Booster model for classification, with the train data were resampled using Random Oversampling method. While the model may perform well, there are several limitations while inputting data to be used as features, listed below:
-* `lead_time` must be inbetween 0 and 709;
-* `duration_of_stay` must be inbetween 1 and 57;
-* `previous_cancellation_ratio` must be in between 0 and 1;
-* `booking_changes` must be in between 0 and 21;
-* `total_of_special_requests` must be in between 0 and 5.
+1. **Tenure**: Rentang waktu penggunaan dalam bulan, berkisar antara 0 hingga 61 bulan.
+2. **CityTier**: Kategori kota yang berkisar antara 1 hingga 3, menunjukkan tingkat kota berdasarkan fasilitas atau populasi.
+3. **WarehouseToHome**: Jarak dalam satuan tertentu dari gudang ke rumah pengguna, dengan rentang antara 5 hingga 127.
+4. **HourSpendOnApp**: Waktu yang dihabiskan pada aplikasi per hari, dengan rentang 0 hingga 5 jam.
+5. **NumberOfDeviceRegistered**: Jumlah perangkat yang terdaftar untuk pengguna, dengan rentang 1 hingga 6.
+6. **SatisfactionScore**: Skor kepuasan pengguna dengan rentang nilai dari 1 hingga 5.
+7. **NumberOfAddress**: Jumlah alamat yang disimpan oleh pengguna, berkisar dari 1 hingga 22.
+8. **Complain**: Kolom biner (0 atau 1) yang menunjukkan apakah pengguna telah mengajukan komplain.
+9. **OrderAmountHikeFromlastYear**: Persentase peningkatan jumlah pesanan dari tahun lalu, dengan rentang 11 hingga 26.
+10. **CouponUsed**: Jumlah kupon yang digunakan pengguna, berkisar antara 0 hingga 16.
+11. **OrderCount**: Jumlah pesanan yang dilakukan oleh pengguna, berkisar antara 1 hingga 16.
+12. **DaySinceLastOrder**: Jumlah hari sejak pesanan terakhir, dengan rentang dari 0 hingga 46.
+13. **CashbackAmount**: Jumlah cashback yang diterima pengguna dalam satuan tertentu, berkisar antara 0.00 hingga 324.99.
 
 <br><hr>
 [🔼 Back to top](#readme-top)
