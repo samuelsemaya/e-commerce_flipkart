@@ -30,7 +30,7 @@ This remedial final project serves as a final crucial component of the education
 
 ---
 
- **Github:** [Repository]([https://github.com/samuelsemaya/e-commerce_flipkart/]) <br>
+ **Github:** [Repository](https://github.com/samuelsemaya/e-commerce_flipkart/) <br>
  **Tableau:** [Dashboard](https://public.tableau.com/app/profile/samuelsemaya/viz/final-project-ver2-fix/Dash_CP) <br>
 
 <div style="text-align: left;">
