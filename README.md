@@ -12,7 +12,7 @@
 ---
 
 <div style="text-align: left;">
-  <h2 style="background-color: #2C3E3D; color: white; padding: 10px 20px; margin-bottom: 20px; border-radius: 8px; font-weight: bold; font-style: italic; display: inline-block;">Remedial Final Project: Data-Driven Analysis and Supervised Learning Classification</h2>
+  <h2 style="background-color: #2C3E3D; color: white; padding: 10px 20px; margin-bottom: 20px; border-radius: 8px; font-weight: bold; font-style: italic; display: inline-block;">Final Project: Data-Driven Analysis and Supervised Learning Classification</h2>
 </div>
 
 > [!IMPORTANT]
