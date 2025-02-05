@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 > [!NOTE]
-> <b>DeltaGroup_JC_DS_FT_JKT_24_RemedialFinalProject</b>
+> <b>DeltaGroup_JC_DS_FT_JKT_24</b>
 
 <h1 align="center">
   <span style="color: #627254; font-size: 44px; font-weight: bold;">
